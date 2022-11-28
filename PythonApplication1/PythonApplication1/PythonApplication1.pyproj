@@ -1,0 +1,66 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b9a8c582-815c-4a69-a830-726baa7c709e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>06 直方图均衡化.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication1</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="02 二值化.py" />
+    <Compile Include="03 滤波.py" />
+    <Compile Include="01 灰度处理test.py" />
+    <Compile Include="01 灰度处理.py" />
+    <Compile Include="05 轮廓提取.py" />
+    <Compile Include="04 边缘检测.py" />
+    <Compile Include="06 直方图均衡化.py" />
+    <Compile Include="07 归一化.py" />
+    <Compile Include="08 角点检测.py" />
+    <Compile Include="09 图像缩放与平均.py" />
+    <Compile Include="10-1 区域生长.py" />
+    <Compile Include="10-2 区域分裂合并.py" />
+    <Compile Include="10-3 分水岭.py" />
+    <Compile Include="10-4 基于图的分割.py" />
+    <Compile Include="12 LBP.py" />
+    <Compile Include="13 SIFT.py" />
+    <Compile Include="14 PCA.py" />
+    <Compile Include="15 欧式距离.py" />
+    <Compile Include="16 knn.py" />
+    <Compile Include="17 k-means.py" />
+    <Compile Include="17-1.py" />
+    <Compile Include="18 逻辑回归.py" />
+    <Compile Include="18-1.py" />
+    <Compile Include="19 朴素贝叶斯.py" />
+    <Compile Include="20 决策树.py" />
+    <Compile Include="21 支持向量机.py" />
+    <Compile Include="22 随机森林.py" />
+    <Compile Include="23 ann.py" />
+    <Compile Include="24 cnn.py" />
+    <Compile Include="傅里叶变换.py" />
+    <Compile Include="11-1 直线检测.py" />
+    <Compile Include="11-2 圆检测.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
